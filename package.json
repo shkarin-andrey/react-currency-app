@@ -2,20 +2,29 @@
   "name": "current-api",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://shkarin-andrey.github.io/react-currency-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
+    "gh-pages": "^3.2.3",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "react-spinners": "^0.11.0",
+    "react-tooltip": "^4.2.21",
+    "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +43,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.8",
+    "tailwindcss": "^3.0.23"
   }
 }
